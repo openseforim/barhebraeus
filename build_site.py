@@ -45,7 +45,7 @@ CSS = """
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Times New Roman",serif}
 main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
-h1{font-size:1.6rem;margin:0 0 .3rem} h1.pg{font-size:1.2rem;margin:2.2rem 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.3rem} h2{font-size:1.2rem;margin:2.2rem 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.3rem}
+h1{font-size:1.6rem;margin:0 0 .3rem} .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap} h1.pg{font-size:1.2rem;margin:2.2rem 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.3rem} h2{font-size:1.2rem;margin:2.2rem 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.3rem}
 p,li{max-width:46rem} .muted{color:var(--muted)} a{color:var(--accent)}
 nav.pages{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0} nav.pages a{padding:.15rem .5rem;border:1px solid var(--line);border-radius:4px;text-decoration:none}
 table.lines{width:100%;border-collapse:collapse;background:var(--card)}
@@ -115,7 +115,7 @@ def page_html(p: int, prev: int | None, nxt: int | None) -> str:
             f'<p class="muted"><a href="index.html">Barhebraeus, <i>Chronography</i> (ed. Bedjan, 1890)</a></p>'
             f'<nav class="pages">{nav}</nav><h1 class="pg" id="p{p}">Page {p}</h1>'
             f'<div class="cap">As read by Kraken, not proofread: {unit} · <a href="{scan}">scan in the viewer</a> · <a href="{img}">page image (leaf {leaf(p)})</a></div>'
-            f'<table class="lines"><tbody>{"".join(rows)}</tbody></table><nav class="pages">{nav}</nav></main></body></html>')
+            f'<table class="lines"><thead class="vh"><tr>{"<th scope=\"col\">English</th>" if tr else ""}<th scope="col">Hebrew letters</th><th scope="col">Syriac</th><th scope="col">Segment</th></tr></thead><tbody>{"".join(rows)}</tbody></table><nav class="pages">{nav}</nav></main></body></html>')
 
 
 def build() -> None:
