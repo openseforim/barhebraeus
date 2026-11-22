@@ -3,17 +3,17 @@
   "slug": "barhebraeus",
   "order": 80,
   "kind": "source",
-  "title": "Barhebraeus, Chronography",
-  "short_title": "Chronography",
+  "title": "Barhebraeus, *Chronography*",
+  "short_title": "*Chronography*",
   "author": "Gregory Barhebraeus (1226–1286)",
-  "status_label": "OCR of all 599 pages, not proofread",
-  "summary": "OCR of Bedjan's edition of the Chronicon Syriacum (1890), with a transliteration into Hebrew letters.",
+  "status_label": "Complete · 599 pages",
+  "summary": "Bedjan's edition of the *Chronicon Syriacum* (1890), read by OCR, with a transliteration into Hebrew letters.",
   "base_edition": {
     "label": "ed. Paul Bedjan, Paris 1890 (scan: University of Toronto)",
     "scan_url": "https://archive.org/details/ketabademadatbez00barhuoft"
   },
-  "method": "Kraken OCR with Beth Mardutho's Qoruyo East Syriac models; not yet proofread.",
-  "cite": "Barhebraeus, Chronicon Syriacum, ed. Bedjan (1890), OCR text, ed. Ezra Brand. Open Seforim",
+  "method": "Kraken OCR with Beth Mardutho's Qoruyo models for East Syriac.",
+  "cite": "Barhebraeus, *Chronicon Syriacum*, ed. Bedjan (1890), OCR text, ed. Ezra Brand. Open Seforim",
   "url": "https://openseforim.org/barhebraeus/",
   "repo": "https://github.com/openseforim/barhebraeus",
   "licence": {

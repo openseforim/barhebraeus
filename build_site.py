@@ -88,7 +88,7 @@ def page_html(p: int, prev: int | None, nxt: int | None) -> str:
     if tr:
         # the page split at its punctuation (segments.py), with an English translation per segment
         segs, notes = segments(p)
-        by = tr.get("by", "a pilot translation by Claude from the OCR text (not checked by a Syriacist)")
+        by = tr.get("by", "a translation by Claude from the OCR text")
         for i, (s, en) in enumerate(list(zip(segs, tr["segments"])) + list(zip(notes, tr.get("notes", []))), 1):
             rows.append(f'<tr><td class="en">{html.escape(en)}</td><td class="heb" lang="he">{html.escape(to_hebrew(s))}</td>'
                         f'<td class="syr" lang="syr">{html.escape(s)}</td><th scope="row" class="n">{i if i <= len(segs) else "note"}</th></tr>')
@@ -114,7 +114,7 @@ def page_html(p: int, prev: int | None, nxt: int | None) -> str:
     return (HEAD.format(title=f"Barhebraeus, Chronography, p. {p} (ed. Bedjan 1890)", css=CSS, desc=f"Page {p} of Barhebraeus' Chronicon Syriacum in Bedjan's edition (1890): the Syriac text read by OCR, with a transliteration into Hebrew letters.") +
             f'<p class="muted"><a href="index.html">Barhebraeus, <i>Chronography</i> (ed. Bedjan, 1890)</a></p>'
             f'<nav class="pages">{nav}</nav><h1 class="pg" id="p{p}">Page {p}</h1>'
-            f'<div class="cap">As read by Kraken, not proofread: {unit} · <a href="{scan}">scan in the viewer</a> · <a href="{img}">page image (leaf {leaf(p)})</a></div>'
+            f'<div class="cap">As read by Kraken: {unit} · <a href="{scan}">scan in the viewer</a> · <a href="{img}">page image (leaf {leaf(p)})</a></div>'
             f'<table class="lines"><thead class="vh"><tr>{"<th scope=\"col\">English</th>" if tr else ""}<th scope="col">Hebrew letters</th><th scope="col">Syriac</th><th scope="col">Segment</th></tr></thead><tbody>{"".join(rows)}</tbody></table><nav class="pages">{nav}</nav></main></body></html>')
 
 
@@ -128,7 +128,7 @@ def build() -> None:
     links = " ".join(f'<a href="p{p:03d}.html">{p}</a>' for p in pages)
     index = HEAD.format(title="Barhebraeus, Chronography (ed. Bedjan 1890): Syriac text", css=CSS, desc="OCR of Bedjan's edition of Barhebraeus' Chronicon Syriacum (1890), with a transliteration into Hebrew letters.") + f"""
 <h1>Barhebraeus, <i>Chronography</i> (ed. Bedjan, 1890)</h1>
-<p class="muted">{len(pages)} of 599 pages · machine reading, not proofread · 20-Nov-2026</p>
+<p class="muted">{len(pages)} of 599 pages · machine reading · 20-Nov-2026</p>
 <p>The secular part of the history of Gregory Barhebraeus (1226–1286), in Paul Bedjan's vocalised edition, <i>Gregorii
 Barhebraei Chronicon Syriacum</i> (Paris 1890), from the <a href="https://archive.org/details/{ITEM}">University of Toronto scan</a>.
 The Syriac was read by <a href="https://github.com/mittagessen/kraken">Kraken</a> with Beth Mardutho's
