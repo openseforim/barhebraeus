@@ -136,7 +136,7 @@ a guide to the content, not a scholarly translation. {{OCR?}} marks a place wher
 <p>How good is it? On <a href="p128.html">p. 128</a> (highlighted: the plague of locusts of the year 1095 of the Greeks, AD 784) the
 reading was compared with a text of the same passage made from two other prints in another script: 55 of 58 words were the same. The
 vowel points, the page headers and the notes have not been checked. Method and code:
-<a href="https://github.com/EzraBrand/barhebraeus-chronography">github.com/EzraBrand/barhebraeus-chronography</a>.</p>
+<a href="https://github.com/openseforim/barhebraeus">github.com/EzraBrand/barhebraeus-chronography</a>.</p>
 <h2>Pages</h2><nav class="pages">{links}</nav>
 </main></body></html>"""
     (DOCS / "index.html").write_text(index, encoding="utf-8")
