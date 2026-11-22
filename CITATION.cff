@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this edition, please cite it as below."
+title: "Barhebraeus, Chronography: reading edition"
+type: dataset
+authors:
+  - family-names: Brand
+    given-names: Ezra
+abstract: "Bedjan's edition of the Chronicon Syriacum (1890), read by OCR, with a transliteration into Hebrew letters. Kraken OCR with Beth Mardutho's Qoruyo models for East Syriac."
+license: CC-BY-SA-4.0
+url: "https://openseforim.org/barhebraeus/"
+repository-code: "https://github.com/openseforim/barhebraeus"
+keywords:
+  - "Judaica"
+  - "Hebrew"
+  - "digital humanities"
+  - "translation"
+  - "digital edition"
