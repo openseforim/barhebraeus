@@ -136,4 +136,4 @@ Argon or Opus only for pages with many {OCR?} marks.
 
 ## Licence
 
-The OCR text, the transliteration, the corrections and the build scripts: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see `LICENSE`). Bedjan's edition (Paris 1890) is in the public domain.
+The OCR text, the transliteration, the corrections and the build scripts: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see `LICENSE`), © 2026 Ezra Brand. Bedjan's edition (Paris 1890) is in the public domain.
