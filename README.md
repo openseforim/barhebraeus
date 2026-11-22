@@ -133,3 +133,7 @@ Argon or Opus only for pages with many {OCR?} marks.
    (line position) before the text is joined.
 4. **Translation**: Budge's English translation (1932) exists; an English side-by-side is not needed for every page,
    but a site like Bochart's (Syriac with a parallel English) would make the text searchable.
+
+## Licence
+
+The OCR text, the transliteration, the corrections and the build scripts: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see `LICENSE`). Bedjan's edition (Paris 1890) is in the public domain.

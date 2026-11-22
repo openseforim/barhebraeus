@@ -15,5 +15,9 @@
   "method": "Kraken OCR with Beth Mardutho's Qoruyo East Syriac models; not yet proofread.",
   "cite": "Barhebraeus, Chronicon Syriacum, ed. Bedjan (1890), OCR text, ed. Ezra Brand. Open Seforim",
   "url": "https://openseforim.org/barhebraeus/",
-  "repo": "https://github.com/openseforim/barhebraeus"
+  "repo": "https://github.com/openseforim/barhebraeus",
+  "licence": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
 }
