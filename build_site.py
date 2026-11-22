@@ -65,7 +65,11 @@ HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name=
 <meta name="description" content="OCR of Bedjan's edition of Barhebraeus' Chronicon Syriacum (1890), with a transliteration into Hebrew letters.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac+Eastern&family=Noto+Serif+Hebrew&display=swap" rel="stylesheet">
-<style>{css}</style></head><body><main>"""
+<style>{css}</style>
+<script>var osT=localStorage.getItem('os-theme');osT&&osT!='auto'&&document.documentElement.setAttribute('data-theme',osT)</script>
+<link rel="stylesheet" href="/assets/os.css">
+<script src="/assets/os.js" defer></script>
+</head><body><main>"""
 
 
 def page_html(p: int, prev: int | None, nxt: int | None) -> str:
