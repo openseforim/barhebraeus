@@ -1,5 +1,7 @@
 # barhebraeus-chronography
 
+Cite as: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24458149.svg)](https://doi.org/10.5281/zenodo.24458149) (Zenodo; this DOI always points to the newest release)
+
 Pilot (20-Nov-2026): OCR of Barhebraeus' *Chronography* (the first, secular part of his history, the *Chronicon
 Syriacum*) in the edition of Paul Bedjan, *Gregorii Barhebraei Chronicon Syriacum e codd. mss. emendatum ac punctis
 vocalibus adnotationibusque locupletatum* (Paris: Maisonneuve, 1890; printed by Drugulin, Leipzig). As far as we found,

@@ -16,6 +16,7 @@
   "cite": "Barhebraeus, *Chronicon Syriacum*, ed. Bedjan (1890), OCR text, ed. Ezra Brand. Open Seforim",
   "url": "https://openseforim.org/barhebraeus/",
   "repo": "https://github.com/openseforim/barhebraeus",
+  "doi": "10.5281/zenodo.24458149",
   "licence": {
     "name": "CC BY-SA 4.0",
     "url": "https://creativecommons.org/licenses/by-sa/4.0/"
