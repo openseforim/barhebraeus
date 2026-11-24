@@ -7,6 +7,8 @@
   "short_title": "*Chronography*",
   "author": "Gregory Barhebraeus (1226–1286)",
   "status_label": "Complete · 599 pages",
+  "start": "p001.html",
+  "start_label": "page 1",
   "summary": "Bedjan's edition of the *Chronicon Syriacum* (1890), read by OCR, with a transliteration into Hebrew letters.",
   "base_edition": {
     "label": "ed. Paul Bedjan, Paris 1890 (scan: University of Toronto)",
